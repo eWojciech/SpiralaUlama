@@ -42,11 +42,11 @@ namespace SpiralaUlamaUnitTest
         [DataRow(1000,168)]
         public void IsExpectedNumberOfPrimes(int value,int exptected)
         {
-            CheckIsExpectedNumberOfPrimes metodaZwracajacaIloscLiczbPierwszychDoWartosci = delegate(int x)
+            int metodaZwracajacaIloscLiczbPierwszychDoWartosci(int x)
             {
                 PrimeNumbersGenerator.GetSingleton().GetValuesTo(out List<int> listOfInts, x);
                 return listOfInts.Count();
-            };
+            }
 
             Assert.AreEqual(exptected, metodaZwracajacaIloscLiczbPierwszychDoWartosci(value));
     }

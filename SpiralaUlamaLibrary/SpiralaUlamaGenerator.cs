@@ -93,7 +93,7 @@ namespace SpiralaUlamaLibrary
             int[,] vectorOfSpiralaMoves = { { 1, 0 }, { 0, 1 }, { -1, 0 }, { 0, -1 } };
 
            //       Debug.WriteLine("Generowanie Punktow W spirali");
-
+           // test only 
             while (value <= maximumValue)
                 for (int vectorsTab = 0; vectorsTab < 4; vectorsTab++)
                     GoInDirection(vectorOfSpiralaMoves[vectorsTab, 0], vectorOfSpiralaMoves[vectorsTab, 1]);
