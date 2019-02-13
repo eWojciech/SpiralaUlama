@@ -88,7 +88,7 @@ namespace SpiralaUlamaUnitTest
 
         [TestMethod]
         [Timeout(2000)]
-        public void ArePrimesNumbersToStringEqualsToExpected()
+        public void ArePrimesNumbersToStringEqualsToExpectedStringOfPrimes()
         {
             Assert.IsTrue(PrimeNumbersGenerator.GetSingleton().FindPrimesTo(1).ToString().Equals(""));
             Assert.IsTrue(PrimeNumbersGenerator.GetSingleton().FindPrimesTo(2).ToString().Equals("2"));
